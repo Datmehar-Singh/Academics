@@ -1,0 +1,19 @@
+/*
+*****************************************************************************
+						Workshop 10 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+
+This workshop gave me an opportunity to explore important c++ object-oriented topics like template functions and template classes which made me strengthen the concept of generic programming which allowed me to make my program flexible for all the type of data type which involve all the derived data type like classes and structures. This also made my program more robust and smaller as I did not have to make more functions for different data type. 
+I faced a problem while calling the function using the templates as the syntax was a bit confusing at first but I became familiar to it with practice. Template functions although are not so effective at backend as compiler has to create several different codes for the use of templates.
+The latest milestone made me learn how to use moularity at its best and how to link and use all the files together in a synchronous way.

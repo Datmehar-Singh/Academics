@@ -1,0 +1,15 @@
+/*
+*****************************************************************************
+						Workshop 9 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop gave me an opportunity to explore the topics like overriding a virtual as well as non virtual method in even more depth which further led me to get a brief insight into what the virtual and non virtual function actually mean and what are they actually used for. It also led me to reading how the access modifiers of the class affect the functionality of these methods. I also strengthened various other concepts like reading and writing data from and into data files which was done using streams and a function of the istream.getline(). This function helped me to get the string into input and stored it into cstring. The milestone had some memory leaks at the time of submission which got resolved easily by keeping care of some required deletes. This milestone also required me to change the way I was flushing the keyboard in date module which I replaced and used another mechanism for taking input.

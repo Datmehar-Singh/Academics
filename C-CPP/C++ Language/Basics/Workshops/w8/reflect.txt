@@ -1,0 +1,16 @@
+/*
+*****************************************************************************
+						Workshop 8 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+This workshop gave me an opportunity to explore the topics like interface and abstract classes. This also made me learn concepts like hierarchy of getting the member function called for the inherited classes. Further adding on, it also made me learn how to define a pure virtual function in a derived class which inherits an abstract or an abstract class which inherits from an interface. 
+The problems which I faced while making a solution for the problem was how to access the display function of the parent class which was solved by the scope resolution operator(::). 
+ The problem which I faced in the milestone was the formatting of the text which needed to be displayed . Also, creating the menu part for milestone 2 was a bit tricky and made me to think and let me explore how to brerak and when to break out of various constructs like while and if.

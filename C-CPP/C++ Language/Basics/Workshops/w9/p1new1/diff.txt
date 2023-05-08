@@ -1,0 +1,14 @@
+In line number 7 of your output:
+The output should be:
+Simpons Family:
+^
+But your output is: 
+==224145== Command: ws
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [S] ASCII code(83)
+but you printed
+  [=] ASCII code(61)
+
