@@ -1,0 +1,36 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Q1. Given the following C statements:
+
+double price1 = 10.10, price2 = 10.12, price3 = 10.15; int cents1 = (int)(price1 * 100); int cents2 = (int)(price2 * 100); int cents3 = (int)(price3 * 100); printf("%d 10.10 = %.15lf\n", cents1, price1); printf("%d 10.12 = %.15lf\n", cents2, price2); printf("%d 10.15 = %.15lf\n", cents3, price3);
+
+Briefly explain why the cents2 variable doesn't properly represent the total cents of price2.
+A1.This is so because doubles or any other sort of data type like integer and others are stored in bianry form in the system which results in some inaccuracies which in this case is 10.1199999999999... which is why when multiplied and converted to integer, result in 10.11 .
+
+
+
+Q2. You had to use integer division (/) to get the number of coins and the modulus (%) operator to easily obtain the remainder amount after each coin denomination calculation. Let's assume this program needed to be modified to only determine the breakdown of paper bills ($50, $20, $10, $5). Provide the few lines of code that would be required to demonstrate how the $20 denomination would be calculated (use your solution variables in your example).
+A2. If the denomination of 20 is to be used with the availability of 50 dollar one then the following command would work fine :
+
+int fifties = totalPriceWithoutTax/50;
+totalPriceWithoutTax %= 50;
+int twenties = totalPriceWithoutTax/20;
+
+Q3. Displaying total cents in the format of dollars and cents (ex: 7245 to $72.45) required converting (casting) an integer to a floating-point type (along with a simple calculation). Without changing any variable data types, show three (3) different ways to accomplish the same outcome (use your solution variables in your example). If you are having problems thinking of how to approach this, think about how an expression can be promoted or narrowed in several ways based on explicit casting, coercion, and how each operand plays a role in this determination.
+A3. There are several ways to accomplish this task. Some of them are as follows:
+
+(a) (float or double)7245 / 100
+(b) 7245 / 100.00
+(c) 7245 * 0.01

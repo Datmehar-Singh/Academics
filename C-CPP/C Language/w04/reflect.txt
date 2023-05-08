@@ -1,0 +1,185 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #4
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+____________________________________________________________________________________________________________________________________________________________
+Q1. Why do you think selection is an extremely important concept in programming? Provide three (3) examples from your program (Part-2) where you use it and how it influenced your solution.
+A1. Selection is very important for the code as it helps the flow of code to make the desired choice which further helps to get the desired output.
+Examples:-
+
+(i)
+if (tomatoesPicked > tomatoes) {
+                    printf("You picked too many... only %d more TOMATO(ES) are needed.\n", tomatoes);
+                }
+                else if (tomatoesPicked == tomatoes) {
+                    printf("Great, that's the tomatoes done!\n");
+                    break;
+                }
+                else if (tomatoesPicked < 1) {
+                    printf("ERROR: You must pick at least 1!\n");
+                }
+                else {
+                    printf("Looks like we still need some TOMATOES...\n");
+                    tomatoes -= tomatoesPicked;
+                }
+it displays if the amount of tomatoes that we have picked are correct or not. if not, then how many more do we need to pick.
+
+(ii)
+if (tomatoes)
+        {
+            while (1)
+            {
+                printf("Pick some TOMATOES... how many did you pick? : ");
+                scanf("%d", &tomatoesPicked);
+
+
+                if (tomatoesPicked > tomatoes) {
+                    printf("You picked too many... only %d more TOMATO(ES) are needed.\n", tomatoes);
+                }
+                else if (tomatoesPicked == tomatoes) {
+                    printf("Great, that's the tomatoes done!\n");
+                    break;
+                }
+                else if (tomatoesPicked < 1) {
+                    printf("ERROR: You must pick at least 1!\n");
+                }
+                else {
+                    printf("Looks like we still need some TOMATOES...\n");
+                    tomatoes -= tomatoesPicked;
+                }
+
+            }
+            printf("\n");
+
+        }
+it chooses whether there are tomatoes to be picked or not. if tomates!=0(and positive) then yes otherwise no.
+
+(iii)
+if (pears < 0) printf("ERROR: Value must be 0 or more.");
+
+checks if entered number is positive or not.
+
+
+______________________________________________________________________________________________________________________________________
+Q2. What is a nested construct? Identify two (2) different examples from your program (Part-2) where you applied this and describe how the logic is executed in language a non-technical person would understand
+A2. A nested construct is a type of condition in programming where in some codig keywords (loops a dn decision making lines) are nested on in another and are made to perform a certain task.
+
+
+For example:
+(i)
+if (apples)
+        {
+            while (1)
+            {
+                printf("Pick some APPLES... how many did you pick? : ");
+                scanf("%d", &applesPicked);
+
+
+                if (applesPicked > apples) {
+                    printf("You picked too many... only %d more APPLE(S) are needed.\n",apples);
+                }
+                else if (applesPicked == apples) {
+                    printf("Great, that's the apples done!\n");
+                    break;
+                }
+                else if (applesPicked < 1) {
+                    printf("ERROR: You must pick at least 1!\n");
+                }
+                else {
+                    printf("Looks like we still need some APPLES...\n");
+                    apples -= applesPicked;
+                }
+
+            }
+            printf("\n");
+        }
+Working:
+This construct implements when apples are to be picked and goes under an infinite loop until it gets completed which further is getting cheched by a series of if ...else if statements.
+
+(ii)
+ do {
+        printf("Grocery shopping\n");
+        printf("================");
+        while (1)
+        {
+            printf("\nHow many APPLES do you need? : ");
+            scanf("%d", &apples);
+            if (apples < 0) printf("ERROR: Value must be 0 or more.");
+            else break;
+        }
+
+
+        while (1)
+        {
+            printf("\nHow many ORANGES do you need? : ");
+            scanf("%d", &oranges);
+            if (oranges < 0) printf("ERROR: Value must be 0 or more.");
+            else break;
+        }
+
+        while (1)
+        {
+            printf("\nHow many PEARS do you need? : ");
+            scanf("%d", &pears);
+            if (pears < 0) printf("ERROR: Value must be 0 or more.");
+            else break;
+        }
+
+
+        while (1)
+        {
+            printf("\nHow many TOMATOES do you need? : ");
+            scanf("%d", &tomatoes);
+            if (tomatoes < 0) printf("ERROR: Value must be 0 or more.");
+            else break;
+        }
+
+        while (1)
+        {
+            printf("\nHow many CABBAGES do you need? : ");
+            scanf("%d", &cabbages);
+            if (cabbages < 0) printf("ERROR: Value must be 0 or more.");
+            else break;
+        }
+}while(ch=='Q'&&iterations==0);
+
+Working=This construct inputs the number of vegetables and fruits to be picked from the customer.
+________________________________________________________________________________________________________________________________________
+
+Q3. What is your favourite iteration construct and why? Compare your favourite to each of the other possible iteration constructs to backup your reasons. In addition, provide a concrete example from your solution for Part-2.
+A3. My favorite iteration construct is while loop as it feels more of an powerful although for is also a good alternative for while as it is an abridge version of the while loop as it has all the control as well as updations in a single line. on the other side, the do while loop is not that liked because it has certain limitations as it performs the task for the first iteration regardless of the condition which makes it kind of hard to figure out it outcomes but it has its own uses like in menu driven program and many more.
+
+Example to support my stance out of my code is:
+
+            while (1)
+            {
+                printf("Pick some PEARS... how many did you pick? : ");
+                scanf("%d", &pearsPicked);
+
+
+                if (pearsPicked > pears) {
+                    printf("You picked too many... only %d more PEAR(S) are needed.\n",pears);
+                }
+                else if (pearsPicked == pears) {
+                    printf("Great, that's the pears done!\n");
+                    break;
+                }
+                else if (pearsPicked < 1) {
+                    printf("ERROR: You must pick at least 1!\n");
+                }
+                else {
+                    printf("Looks like we still need some PEARS...\n");
+                    pears -= pearsPicked;
+                }
+
+            }
+
