@@ -1,0 +1,17 @@
+/*
+*****************************************************************************
+						Workshop 4 - Part 2
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 11 June 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop gave me an opportunity to explore certain topics like constructors and its type and how to declare default arguments in them which do not require the programmer to necessarily pass the argumnets while calling the constructor creating a new object of the class. The constructor that was a bit difficult to understand was the copy constructor as at first, I was not able to figure out its use.
+I also learned about the concept of destructor and when and how can it be invoked. It is invoked before the object of the class goes out of scope. The destructor is generally not used when there is not dynamic memory allocation in the program and is used to delete/ deallocate the memory which was allocate in the program.
+The problem which I faced while submitting the assignment was there was a memory leak which was due to me not considering the case of empty string while deleting the dynamically allocated cstring.

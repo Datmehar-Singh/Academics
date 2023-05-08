@@ -1,0 +1,17 @@
+/*
+*****************************************************************************
+						Workshop 7 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+This workshop gave me an opportunity to explore one of the four pillars of object-oriented programming, inheritance. Inheritance allows us to access and use the member of a base class in the scope of a derived class which can be done in various ways, private, protected, or public, as needed in the problem. These access specifiers allow us to limit the access of derived class to certain members of the base class. This also supports the abstraction of data which is an essential component of OOP.
+The recent milestone, milestone 1 of the project used the topics like array of pointer and allocating and deallocating the array elements. Overloading of operators and involved various functions which were required to perform certain tasks which required an algorithm to be created. The problem which I faced in the milestone was deleting the pointer in the array and freeing that space which resulted in possible memory leaks. Another problem which faced while creating the solution for Milestone 1 was to how to flush the keyboards and finally found a way out.

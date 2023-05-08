@@ -1,0 +1,18 @@
+/*
+*****************************************************************************
+						Workshop 6 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+This workshop gave me an opportunity to explore the topic of file handling in C++. Although I had rudimentary experience of file handling in c language but file handling in C++ was quite different as it used certain functions and operators like insertion operators and getline() function which help us to read and write into the files. I also learned about the streams which are used to read or write data into files.
+This workshop also helped me formulating my approach to resize a dynamically allocated array which was a quite an efficient approach towards programming as it increases the space complexity of the program.
+I faced an issue while deleting the m_fruits array which was redeclared while assigning it a newer value. However, the old value was not deleted and was abandoned without a pointer pointing its location. This might result in a memory leak which found in the assignment operator’s definition.

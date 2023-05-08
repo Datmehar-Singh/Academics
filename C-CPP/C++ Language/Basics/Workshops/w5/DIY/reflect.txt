@@ -1,0 +1,16 @@
+/*
+*****************************************************************************
+						Workshop 5 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop gave me a chance to explore certain important object-oriented topics like operator overloading which can be further divided into subcategories of unary binary and ternary operator overloading. It also gave me an opportunity to learn about the type conversion operator overloading which is highly useful as it may make the code highly readable in some cases. It also strengthened my concept of streams, input and output. How those streams can be passed, how these streams cannot be instantiated and how these streams can be used and printed. 
+There were certain issues which I faced while making this code to be able to be submitted to the matrix. I figured out that I was not able to code the overloaded “<<” operator with its output which made me understand those concepts even more deeply. Also, it was a bit tricky to use the output streams and get them to print the outputs.

@@ -1,0 +1,2075 @@
+Script started on Sat 09 Jul 2022 04:52:39 AM EDT
+==10853== Memcheck, a memory error detector
+==10853== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10853== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==10853== Command: ws
+==10853== 
+Test 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+m_numCount is 4=========================
+numbers.txt
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b047b0 is 32 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+3, 6, 12.2, 34.1, 34.56
+-------------------------
+Total of 5 number(s)
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+Largest number:  34.56
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+Smallest number: 3
+Average :        17.972
+=========================
+Add a number to the list: ^[[A
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+=========================
+*** COPY ***
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04908 is 40 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+0, 3, 6, 12.2, 34.1, 34.56
+-------------------------
+Total of 6 number(s)
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+Largest number:  34.56
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+Smallest number: 0
+Average :        14.9767
+=========================
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x4015FB: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x4015FB: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+End Test 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x401611: test1() (main_prof.cpp:48)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x401611: test1() (main_prof.cpp:48)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+
+Content of "numbers.txt"
+*****************************************************************
+3
+6
+12.2
+34.1
+34.56
+*****************************************************************
+Test 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+m_numCount is 5m_numCount is 0=========================
+numbers.txt
+3, 6, 12.2, 34.1, 34.56
+-------------------------
+Total of 5 number(s)
+Largest number:  34.56
+Smallest number: 3
+Average :        17.972
+=========================
+=========================
+*** COPY ***
+3, 6, 12.2, 34.1, 34.56
+-------------------------
+Total of 5 number(s)
+Largest number:  34.56
+Smallest number: 3
+Average :        17.972
+=========================
+Empty list
+Empty list
+==10853== Invalid read of size 8
+==10853==    at 0x401CCB: sdds::Numbers::operator=(sdds::Numbers&) (Numbers.cpp:69)
+==10853==    by 0x40174C: test2() (main_prof.cpp:58)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+=========================
+numbers.txt
+3, 6, 12.2, 34.1, 34.56, 1000
+-------------------------
+Total of 6 number(s)
+Largest number:  1000
+Smallest number: 3
+Average :        181.643
+=========================
+=========================
+*** COPY ***
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fe18 is 40 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+3, 6, 12.2, 34.1, 34.56, 1000
+-------------------------
+Total of 6 number(s)
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+Largest number:  1000
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+Smallest number: 3
+Average :        181.643
+=========================
+=========================
+*** COPY ***
+3, 6, 12.2, 34.1, 34.56, 1000
+-------------------------
+Total of 6 number(s)
+Largest number:  1000
+Smallest number: 3
+Average :        181.643
+=========================
+End Test 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x4017E6: test2() (main_prof.cpp:53)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x4017E6: test2() (main_prof.cpp:53)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+
+Content of "numbers.txt"
+*****************************************************************
+3
+6
+12.2
+34.1
+34.56
+1000
+*****************************************************************
+Test 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+
+In this test we use your insertion and extraction operators to do
+File IO. This makes sure your implementation is done correctly
+using the reference of istream and ostream and NOT cin and cout
+
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f920 is 64 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+m_numCount is 6End Test 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x401998: test3() (main_prof.cpp:70)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x401998: test3() (main_prof.cpp:70)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+
+Content of "numbers.txt"
+*****************************************************************
+-5
+3
+6
+12.2
+34.1
+34.56
+222.1
+333.2
+1000
+*****************************************************************
+
+Content of "add.txt"
+*****************************************************************
+-5
+222.1
+333.2
+*****************************************************************
+
+Content of "output.txt"
+*****************************************************************
+=========================
+numbers.txt
+-5, 3, 6, 12.2, 34.1, 34.56, 222.1, 333.2, 1000
+-------------------------
+Total of 9 number(s)
+Largest number:  1000
+Smallest number: -5
+Average :        182.24
+=========================
+*****************************************************************
+==10853== 
+==10853== HEAP SUMMARY:
+==10853==     in use at exit: 28 bytes in 2 blocks
+==10853==   total heap usage: 77 allocs, 82 frees, 241,491 bytes allocated
+==10853== 
+==10853== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x401B70: sdds::Numbers::Numbers(char const*) (Numbers.cpp:26)
+==10853==    by 0x40169F: test2() (main_prof.cpp:55)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 20 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x401B12: sdds::Numbers::Numbers(char const*) (Numbers.cpp:23)
+==10853==    by 0x40169F: test2() (main_prof.cpp:55)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== LEAK SUMMARY:
+==10853==    definitely lost: 28 bytes in 2 blocks
+==10853==    indirectly lost: 0 bytes in 0 blocks
+==10853==      possibly lost: 0 bytes in 0 blocks
+==10853==    still reachable: 0 bytes in 0 blocks
+==10853==         suppressed: 0 bytes in 0 blocks
+==10853== 
+==10853== ERROR SUMMARY: 207 errors from 52 contexts (suppressed: 0 from 0)
+==10853== 
+==10853== 1 errors in context 1 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x401998: test3() (main_prof.cpp:70)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 2 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 3 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 4 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f920 is 64 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 5 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 6 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 1 errors in context 7 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x4017E6: test2() (main_prof.cpp:53)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 1 errors in context 8 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 1 errors in context 9 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 1 errors in context 10 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fe18 is 40 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 1 errors in context 11 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x401611: test1() (main_prof.cpp:48)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 12 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x401D40: sdds::Numbers::~Numbers() (Numbers.cpp:79)
+==10853==    by 0x4015FB: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 13 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 14 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 15 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04908 is 40 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 16 of 52:
+==10853== Invalid free() / delete / delete[] / realloc()
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x402422: sdds::Numbers::operator+=(double) (Numbers.cpp:204)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 17 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F8B: sdds::Numbers::min() const (Numbers.cpp:128)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 18 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40276B: sdds::Numbers::max() const (Numbers.cpp:288)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 1 errors in context 19 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40255E: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:237)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b047b0 is 32 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 4 errors in context 20 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 4 errors in context 21 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 4 errors in context 22 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04798 is 8 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 4 errors in context 23 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 24 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 5 errors in context 25 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 5 errors in context 26 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 5 errors in context 27 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 5 errors in context 28 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x401611: test1() (main_prof.cpp:48)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 29 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 30 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 31 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e8 is 8 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 32 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 33 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 34 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 5 errors in context 35 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x4015C3: test1() (main_prof.cpp:46)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b04790 is 0 bytes inside a block of size 40 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x4015B2: test1() (main_prof.cpp:45)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 6 errors in context 36 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x4017E6: test2() (main_prof.cpp:53)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 6 errors in context 37 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x40178C: test2() (main_prof.cpp:60)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 6 errors in context 38 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401CCB: sdds::Numbers::operator=(sdds::Numbers&) (Numbers.cpp:69)
+==10853==    by 0x40174C: test2() (main_prof.cpp:58)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Address 0x5b0fdf0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x401739: test2() (main_prof.cpp:57)
+==10853==    by 0x401A26: main (main_prof.cpp:81)
+==10853== 
+==10853== 
+==10853== 6 errors in context 39 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x4015FB: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 6 errors in context 40 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401560: displayList(sdds::Numbers) (main_prof.cpp:40)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Address 0x5b048e0 is 0 bytes inside a block of size 48 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40154F: displayList(sdds::Numbers) (main_prof.cpp:39)
+==10853==    by 0x4015EF: test1() (main_prof.cpp:47)
+==10853==    by 0x401A17: main (main_prof.cpp:79)
+==10853== 
+==10853== 
+==10853== 7 errors in context 41 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 7 errors in context 42 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f6e0 is 0 bytes inside a block of size 56 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401933: test3() (main_prof.cpp:71)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 43 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401FAF: sdds::Numbers::min() const (Numbers.cpp:130)
+==10853==    by 0x4025F8: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:241)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 44 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4027AE: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 45 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40278F: sdds::Numbers::max() const (Numbers.cpp:290)
+==10853==    by 0x4025C1: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:240)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e8 is 8 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 46 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x40250B: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:235)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 47 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4023D7: sdds::Numbers::operator+=(double) (Numbers.cpp:199)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 8 errors in context 48 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4026E9: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:275)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f7e0 is 0 bytes inside a block of size 64 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x401949: test3() (main_prof.cpp:72)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 9 errors in context 49 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x4022D2: sdds::Numbers::save() (Numbers.cpp:186)
+==10853==    by 0x401D0D: sdds::Numbers::~Numbers() (Numbers.cpp:77)
+==10853==    by 0x401998: test3() (main_prof.cpp:70)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== 
+==10853== 9 errors in context 50 of 52:
+==10853== Invalid read of size 8
+==10853==    at 0x401F0D: sdds::Numbers::average() const (Numbers.cpp:120)
+==10853==    by 0x40262F: sdds::Numbers::display(std::ostream&) const (Numbers.cpp:242)
+==10853==    by 0x402699: sdds::operator<<(std::ostream&, sdds::Numbers const&) (Numbers.cpp:265)
+==10853==    by 0x401975: test3() (main_prof.cpp:74)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Address 0x5b1f8e0 is 0 bytes inside a block of size 72 free'd
+==10853==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==10853==    by 0x40245D: sdds::Numbers::operator+=(double) (Numbers.cpp:218)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853==  Block was alloc'd at
+==10853==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==10853==    by 0x40239A: sdds::Numbers::operator+=(double) (Numbers.cpp:194)
+==10853==    by 0x402735: sdds::operator>>(std::istream&, sdds::Numbers&) (Numbers.cpp:281)
+==10853==    by 0x40195F: test3() (main_prof.cpp:73)
+==10853==    by 0x401A35: main (main_prof.cpp:83)
+==10853== 
+==10853== ERROR SUMMARY: 207 errors from 52 contexts (suppressed: 0 from 0)
+
+Script done on Sat 09 Jul 2022 04:54:13 AM EDT

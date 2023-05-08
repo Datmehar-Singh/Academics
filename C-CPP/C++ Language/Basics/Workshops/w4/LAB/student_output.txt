@@ -1,0 +1,485 @@
+Script started on Fri 10 Jun 2022 12:34:41 PM EDT
+==64401== Memcheck, a memory error detector
+==64401== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==64401== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==64401== Command: ws
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe133 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe185 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe1d4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+Information was set correctly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401==  Address 0x5afe225 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401==  Address 0x5afe274 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401== 
+Information was set incorrectly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401==  Address 0x5afe2c3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401==  Address 0x5afe314 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401== 
+Information was set incorrectly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401==  Address 0x5afe363 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401==  Address 0x5afe3b5 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401== 
+Information was set incorrectly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe403 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe455 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe4a4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+Information was set incorrectly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe4f3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe545 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe594 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+Information was set incorrectly!
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe5e3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe635 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe684 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+Information was set incorrectly!
+                      ----- Testing printInfo function -----
+
+| Type       | Brand            | Model            | Year | Code |     Price |
++------------+------------------+------------------+------+------+-----------+
+| Truck      | Tesla            | Cybertruck       | 2021 |  102 |  65000.00 |
+
+
+                       ----- Car Inventory Information -----
+
+| Type       | Brand            | Model            | Year | Code |     Price |
++------------+------------------+------------------+------+------+-----------+
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x4010D7: sdds::Car::printInfo() const (Car.cpp:119)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe133 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x4010FB: sdds::Car::printInfo() const (Car.cpp:120)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe185 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x40111F: sdds::Car::printInfo() const (Car.cpp:121)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe1d4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+| SUV        | Volvo            | XC90             | 2019 |  109 |  80000.00 |
+| Sedan      | BMW              | M550i            | 2022 |  101 |  91000.00 |
+| Truck      | Tesla            | Cybertruck       | 2021 |  102 |  65000.00 |
+| Sedan      | BMW              | M550i            | 2022 |  100 |      1.00 |
+
+************************************************************
+*  WARNING: There are invalid data in the inventory!      *
+************************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++  WARNING: There are similar entries in the inventory!   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==64401== 
+==64401== HEAP SUMMARY:
+==64401==     in use at exit: 0 bytes in 0 blocks
+==64401==   total heap usage: 34 allocs, 34 frees, 72,863 bytes allocated
+==64401== 
+==64401== All heap blocks were freed -- no leaks are possible
+==64401== 
+==64401== ERROR SUMMARY: 21 errors from 21 contexts (suppressed: 0 from 0)
+==64401== 
+==64401== 1 errors in context 1 of 21:
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x40111F: sdds::Car::printInfo() const (Car.cpp:121)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe1d4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== 
+==64401== 1 errors in context 2 of 21:
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x4010FB: sdds::Car::printInfo() const (Car.cpp:120)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe185 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== 
+==64401== 1 errors in context 3 of 21:
+==64401== Invalid read of size 1
+==64401==    at 0x4C2D104: strlen (vg_replace_strmem.c:461)
+==64401==    by 0x4F5AC39: length (char_traits.h:357)
+==64401==    by 0x4F5AC39: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:612)
+==64401==    by 0x4010D7: sdds::Car::printInfo() const (Car.cpp:119)
+==64401==    by 0x40152A: sdds::print(sdds::Car const*, int) (Car.cpp:182)
+==64401==    by 0x401DAE: main (main_prof.cpp:76)
+==64401==  Address 0x5afe133 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== 
+==64401== 1 errors in context 4 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe684 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+==64401== 
+==64401== 1 errors in context 5 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe635 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+==64401== 
+==64401== 1 errors in context 6 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401==  Address 0x5afe5e3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401C39: main (main_prof.cpp:61)
+==64401== 
+==64401== 
+==64401== 1 errors in context 7 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe594 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+==64401== 
+==64401== 1 errors in context 8 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe545 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+==64401== 
+==64401== 1 errors in context 9 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401==  Address 0x5afe4f3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401BC1: main (main_prof.cpp:55)
+==64401== 
+==64401== 
+==64401== 1 errors in context 10 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe4a4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+==64401== 
+==64401== 1 errors in context 11 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe455 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+==64401== 
+==64401== 1 errors in context 12 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401==  Address 0x5afe403 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401B37: main (main_prof.cpp:49)
+==64401== 
+==64401== 
+==64401== 1 errors in context 13 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401==  Address 0x5afe3b5 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401== 
+==64401== 
+==64401== 1 errors in context 14 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401==  Address 0x5afe363 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401AAD: main (main_prof.cpp:43)
+==64401== 
+==64401== 
+==64401== 1 errors in context 15 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401==  Address 0x5afe314 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401== 
+==64401== 
+==64401== 1 errors in context 16 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401==  Address 0x5afe2c3 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x401A23: main (main_prof.cpp:37)
+==64401== 
+==64401== 
+==64401== 1 errors in context 17 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401==  Address 0x5afe274 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401== 
+==64401== 
+==64401== 1 errors in context 18 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401==  Address 0x5afe225 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x401999: main (main_prof.cpp:31)
+==64401== 
+==64401== 
+==64401== 1 errors in context 19 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400FC0: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:101)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe1d4 is 0 bytes after a block of size 4 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400FA1: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:100)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== 
+==64401== 1 errors in context 20 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F78: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:93)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe185 is 0 bytes after a block of size 5 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F59: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:92)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== 
+==64401== 1 errors in context 21 of 21:
+==64401== Invalid write of size 1
+==64401==    at 0x4C2D203: strcpy (vg_replace_strmem.c:513)
+==64401==    by 0x400F31: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:86)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401==  Address 0x5afe133 is 0 bytes after a block of size 3 alloc'd
+==64401==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==64401==    by 0x400F14: sdds::Car::setInfo(char const*, char const*, char const*, int, int, double) (Car.cpp:85)
+==64401==    by 0x40190F: main (main_prof.cpp:25)
+==64401== 
+==64401== ERROR SUMMARY: 21 errors from 21 contexts (suppressed: 0 from 0)
+
+Script done on Fri 10 Jun 2022 12:34:42 PM EDT
