@@ -1,0 +1,23 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Q1. What did you find to be the most difficult expression you had to code in this workshop? Copy the line of code that you are referring to and explain your answer in detail?
+A1. The line which I felt the most difficult for myself is the following one:printf(" 1|       %d         |         %d          |      %d      |   %d   |      %d       \n", (((coffeeStrength == 'M' || coffeeStrength == 'm') && (type2 == 'l' || type2 == 'l')) || ((coffeeStrength == 'R' || coffeeStrength == 'r') && (type2 == 'B' || type2 == 'b'))), ((makerType == 'r' || makerType == 'R') && (grind2 == 'c'|| grind2 == 'C')) || ((makerType == 'c' || makerType == 'C') && (grind2 == 'f' || grind2 == 'F')), ( (servings>0 && servings<5 &&weight2>0 &&weight2 <= 250)||(servings>4&&servings<10&& weight2==500)||(servings>10 && weight2==1000)), (((isCreamChoice == 'y' || isCreamChoice == 'Y') && (isCream2 == 'y'|| isCream2 == 'Y')) || ((isCreamChoice == 'N' || isCreamChoice == 'n') && (isCream2 == 'n' || isCream2 == 'N'))), ((makerType == 'r' || makerType == 'R') || (temp2 > 59.9 && temp2< 70.0)) || ((makerType == 'c' || makerType == 'C') && (temp2 >= 70.0)));
+	
+This is so because this line includes a lot of expression of relational and logical operators and there were a lot of possible sources of errors.
+
+Q2. Find one of your coded logical expressions from Part-2 and show how this can be evaluated in two different ways but will produce the same desired result. One version of the statement should apply "deMorgan's Law" and the other will not.
+A2.weight1>0 &&weight1 <= 250
+
+!(weight<0&&weight>250) this version of the code applies the de morgan law but the other one doesn't

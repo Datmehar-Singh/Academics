@@ -1,0 +1,14 @@
+In line number 10 of your output:
+The output should be:
+" this is a double-quote character!
+                  ^
+But your output is: 
+" this is a double - quote character!
+                  ^
+
+Unmatched character details:
+The character in column 19 is supposed to be:
+  [-] ASCII code(45)
+but you printed
+  [Space] ASCII code(32)
+
