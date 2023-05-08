@@ -1,0 +1,9 @@
+Name: Datmehar Singh
+Student Number: 108011214
+Email: datmehar-singh@myseneca.ca
+
+During my project, I gained a thorough understanding of the problem at hand and the available tools and techniques to solve it. This included learning about the complexities of the data and how to effectively process and analyze it. Additionally, I expanded my knowledge of the field by studying relevant literature and connecting with other experts. Lastly, I acquired technical skills such as proficiency in programming languages, data analysis, and visualization. The project was a valuable learning experience, and I look forward to utilizing the skills and knowledge I gained in future projects.
+
+One of the crucial implementation of a function that I was supposed to write was:
+
+The attemptToMoveOrder() function is responsible for attempting to move the first order in the queue of CustomerOrder objects currently held by the Workstation object. If the order can be moved, i.e., if it has been filled or the workstation has run out of the required item, then the order is moved to the next workstation in the assembly line. If there is no next workstation, the order is either marked as completed or incomplete depending on whether all of its items have been filled or not. If the order cannot be moved, the function simply returns false.
