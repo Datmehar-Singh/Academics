@@ -1,0 +1,40 @@
+/*
+*****************************************************************************
+						Workshop 1 - Part 2
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+
+In external linking, the variable can be accessed from different translation units. A translation unit is the unit created by the compiler after linking all the files. However, every module has its own translation units. In the code we used the extern keyword to make the variables explicitly externally linked. This means that the variable is available for whole of the memory and can be accessed from all the translation units. 
+Example for the code is:
+CarAds.h:
+extern double g_taxrate;
+extern double g_discount;
+
+
+w1_p2.cpp:
+
+double g_taxrate=10.0;
+double g_discount=10.0;
+
+However, internal linking is the variables that can be accessed from only one translation unit that is their translation unit in this case we can cite the example of the integer variable C out this variable was a global variable which can only be accessed in the W1P2 file.
+Example:
+
+int cout = 0;
+
+Static variables other variables which occupy a specific memory slot in the memory and can be access with the same value even a different compile time instance. In this workshop we used it in the display function we have been we called the display function at different instances but we had to maintain a counter to display in chess if we did not created a static it would have been reset or it needed to be send as a parameter every time we call the display function.
+
+While developing the code for Part 2 I had to change the static C string variables am model and m_brand do a character type pointer which would store the starting address of a character type C string which would be declared dynamically on the runtime after taking the input from the file which made it even more efficient. I also created assignment operator and a copy constructor which assured that there was no memory leak in the program.
+
+I did not faced any problem in developing the solution for this workshop but taking the input from the file with the dealimited type was a bit tricky
+
+The constexpr variable declared in the main function is used for declaring the value at run-time

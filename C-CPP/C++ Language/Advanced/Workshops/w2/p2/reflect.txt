@@ -1,0 +1,19 @@
+/*
+*****************************************************************************
+						Workshop 2 - Part 2 reflect
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 25 September 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+This workshop gave me an opportunity to explore the topics like move constructor and move assignment operator. The reason why there is a significant time difference between the copy and move operations is that move operations do not require the content of the string or any data members of the class to be copied and only assigns the  address of that variable to reference of the object in the heap memory.
+The method that I used to read the file tennis-data.csv was to take the delimited input using the getline function in the std namespace library under the header file of string another approach that could have been used to avoid re reading the file was too keep on resizing the array and put a new element at the end of each extended array with each iteration.
+The steady clock is a clock which is not synchronous with the system time however the system clock is a clock which tells the time as it is depicted by the system and hence cannot be used to make precise calculations.
+I faced difficulty while making the move constructor move assignment operator as it gave me memory leaks which were hard for me eradicate.
