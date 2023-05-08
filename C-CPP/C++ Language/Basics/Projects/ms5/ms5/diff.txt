@@ -1,0 +1,14 @@
+In line number 16 of your output:
+The output should be:
+Choose the type of publication:
+^
+But your output is: 
+| C544 | The Hobbit.................... | 35277 | 2022/07/14 | J. R. R. Tolkie || D208 | Harry Potter and the Philosoph | 72685 | 2022/07/19 | J. K. Rowling   || P002 | The Toronto SUN............... | 85176 | 2022/07/17 || P002 | The Toronto SUN............... |  N/A  | 2022/07/11 || N518 | The Bridges of Madison County. | 15467 | 2022/07/14 | Robert James Wa || Z192 | Charlotte's Web............... |  N/A  | 2022/07/17 | E. B. White; il || V718 | The Tale of Peter Rabbit...... |  N/A  | 2022/07/12 | Beatrix Potter  || P008 | Canadian Running Magazine..... | 77051 | 2022/07/25 || P008 | Canadian Running Magazine..... |  N/A  | 2022/07/18 |Choose the type of publication:
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [C] ASCII code(67)
+but you printed
+  [|] ASCII code(124)
+
