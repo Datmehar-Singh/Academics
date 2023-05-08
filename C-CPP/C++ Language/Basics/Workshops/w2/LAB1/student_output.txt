@@ -1,0 +1,989 @@
+Script started on Thu 26 May 2022 09:03:10 PM EDT
+==163795== Memcheck, a memory error detector
+==163795== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==163795== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==163795== Command: ws
+==163795== 
+1: Abraham Simpson, 324543: A
+2: Artie Ziff, 245446: A
+3: Baby Gerald, 155387: A
+4: Barney Gumble, 262592: A
+5: Bernice Hibbert, 242653: A
+6: Bumblebee Man, 603577: A
+7: Disco Stu, 736389: A
+8: Dolph Starbeam, 829982: A
+9: Drederick Tatum, 937537: A
+10: Elizabeth Hoover, 389470: A
+11: Gloria Jailbird, 601956: A
+12: Jacqueline Bouvier, 522856: A
+13: Janey Powell, 919159: A
+14: Jasper Beardly, 417008: A
+15: Jimbo Jones, 718588: A
+16: Judge Roy Snyder, 533451: A
+17: Lenny Leonard, 562762: A
+18: Lindsey Naegle, 570423: A
+19: Ling Bouvier, 249669: A
+20: Lisa Simpson, 693664: A
+21: Luigi Risotto, 757705: A
+22: Maude Flanders, 272754: A
+23: Mayor Joe Quimby, 425163: A
+24: Milhouse Van Houten, 619711: A
+25: Moe Szyslak, 219634: A
+26: Ned Flanders, 746703: A
+27: Ralph Wiggum, 414067: A
+28: Rod Flanders, 823458: A
+29: Roger Meyers Jr., 313590: A
+30: Sarah Wiggum, 920562: A
+31: Selma Bouvier, 217994: A
+32: Surly Duff, 146127: A
+33: The Rich Texan, 300288: A
+34: Todd Flanders, 257297: A
+35: Uter Zorker, 712465: A
+36: Wendell Borton, 677806: A
+37: Agnes Skinner, 470546: B
+38: Akira Kurosawa, 411928: B
+39: Brandine Spuckler, 584416: B
+40: Carl Carlson, 241968: B
+41: Chazz Busby, 362030: B
+42: Gil Gunderson, 383513: B
+43: Groundskeeper Willie, 774965: B
+44: Hans Moleman, 217944: B
+45: Johnny Tightlips, 840329: B
+46: Kearney Zzyzwicz, 758048: B
+47: Kent Brockman, 568727: B
+48: Luann Van Houten, 737447: B
+49: Lunchlady Doris, 895470: B
+50: Maggie Simpson, 712478: B
+51: Mona Simpson, 419417: B
+52: Nelson Muntz, 584760: B
+53: Old Jewish Man, 259301: B
+54: Sea Captain, 544294: B
+55: Seymour Skinner, 434336: B
+56: Shauna Chalmers, 828516: B
+57: Waylon Smithers, 387433: B
+58: Wise Guy, 134681: B
+59: Alice Glick, 459608: C
+60: Cletus Spuckler, 653783: C
+61: Helen Lovejoy, 686009: C
+62: Kirk Van Houten, 695606: C
+63: Manjula Nahasapeemapetilon, 236261: C
+64: Patty Bouvier, 544545: C
+65: Sideshow Mel, 799960: C
+66: Allison Taylor, 747954: D
+67: Bart Simpson, 753102: D
+68: Comic Book Guy, 234272: D
+69: Edna Krabappel, 877842: D
+70: Herman Hermann, 164996: D
+71: Jessica Lovejoy, 667331: D
+72: Krusty The Clown, 901832: D
+73: Lionel Hutz, 212516: D
+74: Marge Simpson, 695580: D
+75: Miss Springfield, 855862: D
+76: Rabbi Hyman Krustofsky, 374366: D
+77: Ruth Powers, 231018: D
+78: Snake Jailbird, 950955: D
+79: Troy McClure, 394769: D
+80: Apu Nahasapeemapetilon, 290816: F
+81: Dewey Largo, 910346: F
+82: Homer Simpson, 413084: F
+83: Kumiko Albertson, 339422: F
+84: Martin Prince, 575687: F
+85: Rainier Wolfcastle, 674248: F
+86: Squeaky-Voiced Teen, 194002: F
+==163795== Invalid read of size 4
+==163795==    at 0x578C0D4: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C0ED: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C0FD: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C11E: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd60 is 224 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C128: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C12F: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C136: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid write of size 8
+==163795==    at 0x578C138: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C13C: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd64 is 228 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C159: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C160: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd64 is 228 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid write of size 8
+==163795==    at 0x578C298: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C2B4: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd60 is 224 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C170: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd58 is 216 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x57992D9: _IO_file_finish@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcf0 is 112 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x579B864: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcb8 is 56 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x579B872: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdce0 is 96 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x579B890: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcc8 is 72 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 1
+==163795==    at 0x579A1E9: _IO_un_link (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 4
+==163795==    at 0x578C1A1: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd40 is 192 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid read of size 8
+==163795==    at 0x578C250: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcc8 is 72 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid write of size 4
+==163795==    at 0x578C239: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== Invalid free() / delete / delete[] / realloc()
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== HEAP SUMMARY:
+==163795==     in use at exit: 0 bytes in 0 blocks
+==163795==   total heap usage: 89 allocs, 90 frees, 75,933 bytes allocated
+==163795== 
+==163795== All heap blocks were freed -- no leaks are possible
+==163795== 
+==163795== ERROR SUMMARY: 27 errors from 23 contexts (suppressed: 0 from 0)
+==163795== 
+==163795== 1 errors in context 1 of 23:
+==163795== Invalid free() / delete / delete[] / realloc()
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 2 of 23:
+==163795== Invalid write of size 4
+==163795==    at 0x578C239: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 3 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C250: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcc8 is 72 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 4 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C1A1: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd40 is 192 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 5 of 23:
+==163795== Invalid read of size 1
+==163795==    at 0x579A1E9: _IO_un_link (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 6 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x579B890: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcc8 is 72 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 7 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x579B872: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdce0 is 96 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 8 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x579B864: _IO_default_finish (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcb8 is 56 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 9 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x57992D9: _IO_file_finish@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x578C1A0: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdcf0 is 112 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 10 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C170: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd58 is 216 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 11 of 23:
+==163795== Invalid write of size 8
+==163795==    at 0x578C298: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 12 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C159: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 13 of 23:
+==163795== Invalid write of size 8
+==163795==    at 0x578C138: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 14 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C136: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 15 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C12F: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 16 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C128: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 17 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C0FD: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd68 is 232 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 18 of 23:
+==163795== Invalid read of size 8
+==163795==    at 0x578C0ED: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd08 is 136 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 1 errors in context 19 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C0D4: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdc80 is 0 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 2 errors in context 20 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C2B4: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd60 is 224 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 2 errors in context 21 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C160: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd64 is 228 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 2 errors in context 22 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C13C: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd64 is 228 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== 
+==163795== 2 errors in context 23 of 23:
+==163795== Invalid read of size 4
+==163795==    at 0x578C11E: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x401001: sdds::deallocateMemory() (Student.cpp:120)
+==163795==    by 0x400BB9: main (main_prof.cpp:16)
+==163795==  Address 0x5afdd60 is 224 bytes inside a block of size 568 free'd
+==163795==    at 0x4C2B06D: free (vg_replace_malloc.c:540)
+==163795==    by 0x578C246: fclose@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400AB9: sdds::closeFile() (File.cpp:42)
+==163795==    by 0x400E66: sdds::load(char const*) (Student.cpp:79)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795==  Block was alloc'd at
+==163795==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
+==163795==    by 0x578CC4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==163795==    by 0x400A29: sdds::openFile(char const*) (File.cpp:26)
+==163795==    by 0x400DF8: sdds::load(char const*) (Student.cpp:67)
+==163795==    by 0x400BAB: main (main_prof.cpp:13)
+==163795== 
+==163795== ERROR SUMMARY: 27 errors from 23 contexts (suppressed: 0 from 0)
+
+Script done on Thu 26 May 2022 09:03:10 PM EDT

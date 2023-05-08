@@ -1,0 +1,18 @@
+/*
+*****************************************************************************
+						Workshop 2 - Part 2
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 29 May 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+This workshop made me explore some important topics like dynamic memory allocation. Dynamic memory allocation allocates memory in the heap storage while keeping a pointer to its location in the stack memory. This not only is more efficient for the resources of the machine but also enables us to some functionalities like declaring the size of an array or a cstring at runtime which will eliminate the issue of overflowing of the array.
+Also, I learned some other topic like polymorphism, which is the concept of overloading the function which has the same name but perform different tasks using different number of parameters and different type of parameters. However, the return type of the function does not make it different from other overloaded functions.
+The difficulty that I had was with uninitialised variables which were used in the program. This resulted in an error which took me a bit longer than usual to figure out.

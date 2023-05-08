@@ -1,0 +1,17 @@
+/*
+*****************************************************************************
+						Workshop 3 - Part 2
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 6 May 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+In this workshop, I learnt various new as well as important concepts such as what is a class and what are it access specifiers, for instance whihc variables can be accessed without the use of a member functinoa and which member need to have a getter function which returns the certain data member. There are other member functions of a class which are made to perform or to alter the data members of the class or operate on them. It is useful because making a stand-alone function for that will have to get the copy of that variable by a certain getter function. Also, it will not change it by reference. 
+The problem which I faced in this workshop was to print the bar graph using the std functions as they have a tricky and hard to understand scope. Another thing which was posed to be an issue in this workshop was to make a dynamic array of the data type of the class Bar as it was implicitly using the default constructor.
