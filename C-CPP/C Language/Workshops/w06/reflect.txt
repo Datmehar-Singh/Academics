@@ -1,0 +1,66 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Q1. Parallel arrays provide us the ability to group related data. Using what you coded in this workshop, briefly explain how you linked related data for any given item in the dataset? What was the ‘key’ used to accomplish this?
+	A1. Using parallel arrays are highly useful as it helps us to create a new type of imaginary data structure which can store the data in a tabular format.
+Example from my code is as follows:
+
+
+    double itemCostOf[10];
+    int importanceOf[10];
+    char finOptionOf[10];
+
+for (i = 0;i < counter;i++)
+    {
+        printf("%3d %6d %8c    %11.2lf\n",i+1,importanceOf[i],finOptionOf[i],itemCostOf[i]);
+        total += itemCostOf[i];
+    }
+In this example i used three parallel arrays itemCostOf[] for the cost of item, importanceOf[] for storing the priority of the item, and finOptionOf[] for storing whether it has financing option available or not.
+
+for the key-value combination, the following example would fit the best:
+
+for (i = 0;i < itemNo;i++)
+                    {
+                        if (importanceOf[i] == selection2)
+                        {
+                            total2 += itemCostOf[i];
+                        }
+                    }
+In this I used priority of the item as a key and its cost as value for the desired operation which was to total the amount of the items which have an importance of the one entered by the user.
+
+________________________________________________________________________________________________________________________________________________
+
+Q2. Why do you think it is common practice to iterate arrays initializing the iterator variable to zero and not to a value of one? Justify your answer using an example from this workshop.
+A1. The value of the iterator variable is set to be 0 because arrays by default are of 0-based indexing so we use 0 to access the first element. However, if we use 1 instead of 0, it would make us access the second element of the array.
+Another thing which makes it more logical is the declaration of the array when we declare an array, we specify it's size which is the sizeOf(data-type)*sizeOfArray it allocates to the array which need a number less the size for the terminal value. For example, size of array is 3 then we can only store 3 variable when started from 0 ie, at index 0, 1 and 2. if we start it from 1 then we can only store 2 values at index 1 and 2.
+
+For Example:
+ for (i = 0;i < itemNo;i++)
+                    {
+                        if (importanceOf[i] == selection2)
+                        {
+                            total2 += itemCostOf[i];
+                        }
+                    } 
+
+________________________________________________________________________________________________________________________________________________
+
+Q3. How would you describe conceptually what an array is to a child (5-8-year-old)? How would you describe accessing an element in the array? Warning: keep your explanation simple or the child will not understand.
+A3. The simple most definition to an array is the list of item. But to describe it to a child, it can be simply understood as the collection of similar items. For example, a collection of his toys, all are of the same type. About the accessing thing, a child can be made to understand that by visualising the array as the following
+|	|	|	|	|
+0	1	2	3	4
+the area to right of the 0 is denoted by 0 and that to the right of 1 can be denoted by 1 and so on.
+
+
+
