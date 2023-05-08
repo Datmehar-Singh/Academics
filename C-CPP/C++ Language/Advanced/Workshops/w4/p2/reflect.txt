@@ -1,0 +1,19 @@
+/*
+*****************************************************************************
+						Workshop 4 - Part 2 reflection
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 07 October 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+
+This workshop gave me an opportunity to learn more about the topics like composition,aggregation and association. These techniques help us to use the object of another class as a data member for a different class which increase the reuseability of the code. Also it makes the code more effective as the code for the another class is used and making it less complex in space complexity.
+Composition implies that with the destruction of the parent class the existence of the subclass or the class used in compostion will come to an end while its the opposite in the aggregation. That is, the aggregated class remains in existence even with destruction of the first class.
+In composition, a deep copy of the variable is required while in the aggregation, a shallow copy would work perfectly fine.
+I faced difficulty in this workshop while maintaining a deep copy for reservation in the restaurant’s constructor which made the 15th test case fail as the values which were being stored in the array were the address of the already existing objects of reservation class which when changed got reflected in all the objects having those objects in them. This is not the desired output and hence I needed to change that part of the code.

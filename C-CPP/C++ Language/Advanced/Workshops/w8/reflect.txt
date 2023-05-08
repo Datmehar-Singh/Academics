@@ -1,0 +1,10 @@
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+The advantage that smart pointer provide is that we do not have to use new and delete keyword that prevents the code from getting memory leaks and makes it more efficient as well as robust to different problems . There are quite a lot of differences in the raw pointer and smart pointers used as in raw pointer we have to use new and delete to allocate and deallocate memory using destructor and different types of constructors the first constructor that we have to use the default constructor and the second one is the copy constructor which needs to take care of the memory management.
+Code Example:
+std::shared_ptr<EmployeeWage> eObj(new EmployeeWage(emp[i].name,sal[j].salary));
+								eObj->rangeValidator();
+

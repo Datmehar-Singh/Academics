@@ -1,0 +1,10 @@
+Full Name  : Datmehar Singh
+Student ID#: 108011214
+Email      : datmehar-singh@myseneca.ca
+Section    : NHH
+
+This workshop gave me an opportunity to learn about the topics like functor and lambda expression as well as error handling and catching and throwing exceptions.
+In the implementation of functor, we have to create the data member of the functor module while in the creation of lambda expression, we don’t have to make data member od the expression while we can send the variables at the time of declaration.
+To cha ge the code to throw exception in the constructor both on the coding sid and on the cliend side, we can wrap the code in the try catch block while the constructor might throw exception on a certain specific condition.
+In order to not reuse the implementation in the book and movie classes’ constructor, we can create new function in a new module utils which will take the input from the string till the delimiting character.
+In the main, the classes are instantiated using the custom constructors.  We can also instantiate them using the default constructor. We need not create a default constructor because all the data member of the class can be safely assigned to a safe state at the time of declaration of variables.

@@ -1,0 +1,14 @@
+In line number 48 of your output:
+The output should be:
+File size in bytes: [376]
+                     ^
+But your output is: 
+File size in bytes: [752]
+                     ^
+
+Unmatched character details:
+The character in column 22 is supposed to be:
+  [3] ASCII code(51)
+but you printed
+  [7] ASCII code(55)
+

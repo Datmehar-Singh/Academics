@@ -1,0 +1,17 @@
+/*
+*****************************************************************************
+						Workshop 7 - Part 2
+Full Name  : Khushmeet Singh
+Student ID#: 138199211
+Email      : khushmeet-singh@myseneca.ca
+Date       : 13 November 2022
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop gave me an opportunity to explore the topics in the standard template library under the header file algorithm. These functions are inbuilt function for container which make the prgram more efficient as well as readable. THis also amkes the program more consise and easy to develop as we can easily work on one aobject an need not care about the sytax of accessing the array elements usnig indices or dereferencing the iterator.
+The STL functions that I used in this workshop was copy, This function copies all the elemtne of the vector to another fresh vector. I also used copy_if function whcih onluy copied the content of oen vector to enother when it received a true boolean value from the lambda or functor which is passes as a argument to it. Also, used a function sort which sorts the vector on the basis of a data member of the struct.
+To rectify the case of invalid inout in the srt function, we can create a else case which can show an error message.
