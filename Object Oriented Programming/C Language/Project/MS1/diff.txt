@@ -1,0 +1,14 @@
+In line number 71 of your output:
+The output should be:
+ERROR: String length must be no more than 6 chars: CATS
+                                                 ^
+But your output is: 
+ERROR: String length must be no more than 6 charsCATS
+                                                 ^
+
+Unmatched character details:
+The character in column 50 is supposed to be:
+  [:] ASCII code(58)
+but you printed
+  [C] ASCII code(67)
+
